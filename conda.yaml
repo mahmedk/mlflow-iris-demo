@@ -1,0 +1,18 @@
+name: spam-lsvc-classifer-sklearn
+channels:
+  - defaults
+dependencies:
+  - python=3.7.6
+  - pip
+  - pip:
+    - mlflow==1.26.1
+    - numpy==1.18.5
+    - scikit-learn==0.23.1
+    - scikit-plot==0.3.7
+    - matplotlib==3.2.1
+    - seaborn==0.10.1
+    - protobuf==3.19.4
+variables:
+  MLFLOW_TRACKING_INSECURE_TLS: "true"
+  MLFLOW_TRACKING_URI: "https://192.168.200.108:32222"
+  MLFLOW_TRACKING_TOKEN: "eyJhbGciOiJSUzI1NiIsImtpZCI6Ijc0YmNkZjBmZWJmNDRiOGRhZGQxZWIyOGM2MjhkYWYxIn0.eyJ1c2VybmFtZSI6Im9jZGt1YmUiLCJyb2xlIjoiZGF0YXNjaWVudGlzdCxtbGUscGUsb3BlcmF0b3IiLCJkZXBsb3kiOmZhbHNlLCJleHAiOjQ5MDA4OTA3MjgsImlhdCI6MTY2MDg5MDcyOCwiaXNzIjoiRGt1YmUifQ.YKxId0qGi9V34B9cXupeGpRtaHnz36qAPhPaLKOmVgbif1kNWgMoUgG-wwcu5MFGQap4RoVTn6KRE4wqb237UL00uAhzhZ4bOH36sUiboA98qhTyvI3gEvfp8l1uNol2w3jrgsHxLQnwwVIIcsuPSmGBGT2s2C773yKrpZw3eu8Je1xiXiYDgU0RlhV8FYL-CMRK7nN013yEt3vShPmXrMNcGwe8CfhAsfQPRFu34MIBRsi-QytlcN5mTFWaBio8eS6Fxf-a7z5InNppYTMwkPUpV5lsMf5TbDWEzJKNPvhcOLAmBQ6a6bdWCTeX65pp-eJspygW7triInMygIHovQ"
