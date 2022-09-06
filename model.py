@@ -34,10 +34,6 @@ with mlflow.start_run(run_name='iris classification') as run:
     plt.savefig("confusion-matrix.png")
     mlflow.log_artifact("confusion-matrix.png")
 
-    #plot_roc_curve(lsvc, xtest, ytest)
-    #plt.savefig("roc-auc-plot.png")
-    #mlflow.log_artifact("roc-auc-plot.png")
-
     cr = classification_report(ytest, ypred, output_dict=True)
     recall_0 = cr['0']['recall']
     f1_score_0 = cr['0']['f1-score']
